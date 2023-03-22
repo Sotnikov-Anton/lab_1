@@ -48,7 +48,7 @@ public class DataManipulation {
         
         AbstractUserPlant plant = new UserPlant();
         Random random = new Random();
-        for (int j = 0; j < 20; j++) {
+        for (int j = 0; j < 40; j++) {
             switch (random.nextInt(2)) {
                 case 0:
                     students.add(plant.createStudent());

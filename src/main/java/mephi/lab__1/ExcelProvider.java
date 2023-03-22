@@ -36,7 +36,7 @@ public class ExcelProvider {
     }
     public void init()
     {
-        setFile(new File("D:\\Java programs\\lab_1_data_for_generation.xlsx"));
+        setFile(new File(".\\lab_1_data_for_generation.xlsx"));
     }
     public void run()
     {
