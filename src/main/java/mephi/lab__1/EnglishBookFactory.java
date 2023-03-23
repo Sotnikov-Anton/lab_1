@@ -9,6 +9,10 @@ public class EnglishBookFactory implements BookFactory{
 
     @Override
     public Fiction createFiction() {
-        return new EnglishFiction();
+        Director director = new Director();
+        FictionBuilder fictionBuilder = new EnglishFictionBuilder();
+        director.setFictionBuilder(fictionBuilder);
+        director.constructFiction();
+        return director.getFiction();
     }    
 }

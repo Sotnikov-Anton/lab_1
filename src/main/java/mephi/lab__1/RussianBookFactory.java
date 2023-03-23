@@ -9,7 +9,11 @@ public class RussianBookFactory implements BookFactory{
 
     @Override
     public Fiction createFiction() {
-        return new RussianFiction();
+        Director director = new Director();
+        FictionBuilder fictionBuilder = new RussianFictionBuilder();
+        director.setFictionBuilder(fictionBuilder);
+        director.constructFiction();
+        return director.getFiction();
     }
     
 }
